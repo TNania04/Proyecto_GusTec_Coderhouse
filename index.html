@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tecnicos avanzados en reparacion de consolas,joysticks y demas aparatos electronicos">
+    <meta name="keywords" content="Tecnico, Consola, Playstation, Xbox, Nintendo, Joystick">
     <title>GusTec | Reparaciones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="Imagenes/logoarriba.png"/>
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagenes/logoarriba.png"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 </head>
 <body id="body">
     <header id="header"><nav id="nav">
-        <img src="Imagenes/logoGusTec.png" alt="Logo">
+        <img src="./Imagenes/logoGusTec.png" alt="Logo">
+        
         <ul>
             <li><a href="pages/productos.html">Productos</a></li>
             <li><a href="pages/contacto.html">Contacto</a></li>
@@ -21,39 +26,47 @@
         </ul>
     </nav></header>
     <section id="first" class="container-space">
+        <div data-aos="fade-up">
         <h1> GusTec </h1>
          <p> El sitio ideal para arreglar tu consola</p>
         <h3>Si estas aqui es porque necesitas ayuda</h3>
             <p>Te damos la bienvenida a nuestra página web! </p>
             <p>Aqui encontraras a los tecnicos mejor capacitados del pais a la hora de arreglar tus aparatos electronicos</p>
-        
+        </div>
     </section>
     <section id="contact" class="container-space">
         <div class="text-container">
+            <div data-aos="fade-up-right">
             <h3 class="text-container-title">Que Hacemos?</h3>
             <img src="Imagenes/servicio-tecnico-consolas.jpg"   alt="Consola en reparación">
-        <img src="Imagenes/For-Xbox-One-Elite-Series-1-Controller-Replacement-Shell-Top-Bottom-Case-Rail-Panel-LT-RT.jpg"  alt="Joystick en reparación">
-        <p>Trabajamos con cualquier tipo de consola o Joystick ! </p>
-        <img src="Imagenes/reparacionplaca1-300x150.jpg" alt="Elementos con los que trabajamos">
-        <p>Contamos con Herramientas de alta calidad para dejar tus productos como nuevos</p>
-        <img src="Imagenes/persona-reparando-portatil.webp"  alt="Personal trabajando">
-        <p>Además contamos con tecnicos altamente capacitados para brindar el mejor servicio</p>
+            <img src="Imagenes/For-Xbox-One-Elite-Series-1-Controller-Replacement-Shell-Top-Bottom-Case-Rail-Panel-LT-RT.jpg"  alt="Joystick en reparación">
+            </div>
+            <div data-aos="fade-up-right">
+            <p>Trabajamos con cualquier tipo de consola o Joystick ! </p>
+            <img src="Imagenes/reparacionplaca1-300x150.jpg" alt="Elementos con los que trabajamos">
+            </div>
+            <div data-aos="fade-up-right"> 
+            <p>Contamos con Herramientas de alta calidad para dejar tus productos como nuevos</p>
+            <img src="Imagenes/persona-reparando-portatil.webp"  alt="Personal trabajando">
+            <p>Además contamos con tecnicos altamente capacitados para brindar el mejor servicio</p>
+            </div>
         </div>
     </section>
     <aside id="aside" class="container-space">
+        <div data-aos="fade-up-left">
+
         <h3>Como lo hacemos?</h3>
         <h5>En nuestra empresa queremos brindarte la mejor solución</h5>
         <p> En esta seccion encontraras videos de como funciona nuestro equipo  </p>
-        <div>
         <iframe width="300" height="200" src="https://www.youtube.com/embed/Te0AB8HT9V4" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe>
         <span>limpieza y reparación de joystick</span>
-        </div>
         <div>
         <iframe width="300" height="200" src="https://www.youtube.com/embed/dJgXobATp3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <span>cambio de pasta termica en ps4</span>
         </div>
        <hr>
         <p>puedes encontrar más videos en nuestro <a href="https://youtu.be/zu2Eaw6Ohxc">canal de youtube</a></p>
+        </div>
         
     </aside>
     <footer id="footer" class="container-space">
@@ -71,5 +84,12 @@
         
 
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+                  easing: 'ease-out-back',
+                  duration: 1000
+              });
+    </script>
   </body>
 </html>
