@@ -51,12 +51,12 @@ p {
   grid-template-rows: auto auto;
   justify-items: center;
   text-align: center;
-  padding: 10px 5px;
+  padding: 1px 5px;
   grid-area: nav;
 }
 #nav img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 80px;
 }
 #nav ul {
   display: flex;
@@ -159,6 +159,7 @@ p {
     grid-template-rows: auto;
   }
   #footer {
+    
     display: flex;
     align-items: center;
   }
