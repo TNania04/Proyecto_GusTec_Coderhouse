@@ -1,0 +1,11 @@
+#footer {
+
+    background-color: $background-color_1;
+    grid-area: footer;
+    padding: 10px;
+    margin: 0;
+  
+    img {
+      height: fit-content;
+    }
+  }

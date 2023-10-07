@@ -1,0 +1,17 @@
+#contact {
+    text-align: center;
+    background-color: $background-color_3;
+    color: $color_3;
+    grid-area: contact;
+    
+  
+    img {
+      width: 200px;
+      height: 150px;
+      border: 2px solid rgb(158, 51, 158);
+    }
+  
+    .text-container {
+      text-align: center;
+    }
+  }

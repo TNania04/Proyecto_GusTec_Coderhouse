@@ -1,0 +1,27 @@
+#aside {
+	background-color: $background-color_4;
+	grid-area: aside;  
+	p {
+	  padding-top: 50px;
+	}
+  
+	iframe {
+	  border: 2px solid rgb(158, 51, 158);
+	}
+  
+	span {
+	  padding: 15px;
+	}
+  
+	a {
+	  &:hover {
+		font-weight: bolder;
+		color: $color_1;
+		background-color: $background-color_2;
+	  }
+  
+	  &:link {
+		text-decoration: none;
+	  }
+	}
+  }

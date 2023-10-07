@@ -1,13 +1,10 @@
-/*Variables*/
-$color_1: rgb(102, 7, 190);
-$color_2: #f4f1f1;
-$color_3: #fff;
-$background-color_1: rgb(200, 148, 249);
-$background-color_2: rgb(204, 157, 249);
-$background-color_3: #1a1a1a;
-$background-color_4: rgb(239, 228, 248) ;
-
-/*Font Styling*/
+@import 'variables';
+@import 'header';
+@import 'nav';
+@import 'first-sectio';
+@import 'contact';
+@import'aside';
+@import 'footer';
 * {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
@@ -34,116 +31,9 @@ p {
 .container-space {
 	padding: 64px 20px;
 }
-#header {
-	grid-area: header;
-}
 #body {
 	display: grid;
 	grid-template-areas: "header" "first" "contact" "aside" "footer";
-}
-/*Navbar*/
-#nav {
-	background-color: $background-color_1;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
-	justify-items: center;
-	text-align: center;
-	padding: 10px 5px;
-	grid-area: nav;
-	img {
-		width: 90px;
-		height: 90px;
-	}
-	ul {
-		display: flex;
-		align-items: center;
-	}
-	li {
-		list-style: none;
-	}
-	a {
-		font-size: 15px;
-		text-transform: uppercase;
-		padding: 10px 10px;
-		&:hover {
-			font-weight: bolder;
-			color: $color_1;
-			background-color: $background-color_2;
-		}
-		&:link {
-			text-decoration: none;
-		}
-	}
-}
-/*First section*/
-#first {
-	color: $color_2;
-	text-shadow: #1a1a1a;
-	background-image: url(../Imagenes/FondoVioleta.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	text-align: center;
-	padding: 64px 20px;
-	grid-area: first;
-	p {
-		padding: 10px;
-	}
-	h3 {
-		padding: 20px;
-	}
-}
-/*Contact*/
-#contact {
-	text-align: center;
-	background-color: $background-color_3;
-	color: $color_3;
-	grid-area: contact;
-	img {
-		width: 200px;
-		height: 150px;
-		border: 2px solid rgb(158, 51, 158);
-	}
-	.text-container {
-		text-align: center;
-	}
-}
-/*Aside*/
-#aside {
-	background-color: $background-color_4;
-	grid-area: aside;
-	p {
-		padding-top: 50px;
-	}
-	iframe {
-		border: 2px solid rgb(158, 51, 158);
-	}
-	span {
-		padding: 15px;
-	}
-	a {
-		&:hover {
-			font-weight: bolder;
-			color: $color_1;
-			background-color: $background-color_2;
-		}
-		&:link {
-			text-decoration: none;
-		}
-	}
-}
-/*Footer*/
-
-#footer {
-	
-	background-color: $background-color_1;
-	grid-area: footer;
-	padding: 10px;
-	margin: 0;
-	img {
-		width: 100px;
-	}
 }
 @media (min-width: 600px) {
 	#body {
@@ -156,6 +46,7 @@ p {
 		grid-template-rows: auto;
 	}
 	#footer {
+		justify-content: space-around;
 		display: flex;
 		align-items: center;
 	}
